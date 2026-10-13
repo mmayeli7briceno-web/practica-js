@@ -17,3 +17,4 @@ const computadora = {
     { componente: "Sistema operativo", estado: "Windows 11, versión 25H2" }
   ]
 }
+console.log(computadora)

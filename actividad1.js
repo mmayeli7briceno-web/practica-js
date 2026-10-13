@@ -23,4 +23,4 @@ const pelicula = {
   direccion: ["John Lasseter"],
   escritores: ["Andrew Stanton", "Joss Whedon", "Joel Cohen", "Alec Sokolow"]
 }
-
+ console.log(pelicula);
