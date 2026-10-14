@@ -2,9 +2,18 @@
 //Crear una funcion que solicite dos arreglos numericos, debera
 //retornar la suma de ambos arreglos simpre que tengan el mismo numero
 //de elementos, de lo contrario, devolver array vacio []
+function sumARreglo(lis1 = [], lis2 = []){
+    let resultado = []
 
-//test...
+    if(lis1.length == lis2.length){
+        lis1.forEach((numero, indice) => {
+            resultado[indice] = numero + lis2[indice]
+        })
+    }
+    return resultado
+}
 
+console.log(sumARreglo([1, 2, 3], [4, 5, 6]))
 //funcion 4
 //Crear una funcion que solicite un numero positivo y retorne todos los divisores
 //desde 1 hasta el numero que hayas indicado. El resultado se obtiene
