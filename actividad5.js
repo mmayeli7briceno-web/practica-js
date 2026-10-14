@@ -11,10 +11,16 @@
     let minutos = Math.floor((tiemRestant % (1000 * 60 * 60)) / (1000 * 60))
     let segundos = Math.floor((tiemRestant % (1000 * 60)) / 1000)
 
-    console.log("Faltan", horas, "horas,", minutos, "minutos y", segundos, "segundos para que termine el dia")
+  //  console.log("Faltan", horas, "horas,", minutos, "minutos y", segundos, "segundos para que termine el dia")
 }
 )();
 
 
 //crear una funcion autoejecutable que solicite un numero(expresado en segundos ) y nos 
 //devuelvo un  saludo, despues del tiempo indicado
+(function(segundos = 0){
+    setTimeout(function(){
+        console.log("Hola, acabo el tiempo")
+    }, segundos * 1000)
+}
+)(3);
