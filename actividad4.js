@@ -13,7 +13,7 @@ function sumARreglo(lis1 = [], lis2 = []){
     return resultado
 }
 
-console.log(sumARreglo([1, 2, 3], [4, 5, 6]))
+//console.log(sumARreglo([1, 2, 3], [4, 5, 6]))
 
 //funcion 4
 //Crear una funcion que solicite un numero positivo y retorne todos los divisores
