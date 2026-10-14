@@ -1,11 +1,21 @@
 //Función 1:
 //crear una funcion que reciba un areglo de numero y retorne como resultado
 //un objeto indicandonos cuantos valores son pares e impares 
-
-
-
-
-//test, demostracion, console.log
+function contadorParImp(Numeros = []){
+    let pares = 0, impares = 0
+    Numeros.forEach(numero => {
+        if (numero % 2 == 0){
+            pares++;
+        } else {
+            impares++;
+        }
+    });
+    return {
+        pares : pares,
+        imapres : impares
+    };
+}
+console.log(contadorParImp([1, 2, 3, 4, 5, 6, 7, 8, 9]))
 
 
 
